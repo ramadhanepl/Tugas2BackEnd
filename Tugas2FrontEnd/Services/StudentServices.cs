@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System.Text;
 using Tugas2FrontEnd.Models;
 
 namespace Tugas2FrontEnd.Services
@@ -24,6 +25,25 @@ namespace Tugas2FrontEnd.Services
         public async Task<Student> GetById(int id)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<Student> Insert(Student obj)
+        {
+            Student student = new Student();
+            using (var httpClient = new HttpClient())
+            {
+                StringContent content =
+                    new StringContent(JsonConvert.SerializeObject(obj), Encoding.UTF8, "application/json");
+                using (var response = await httpClient.PostAsync("https://localhost:6001/api/Students", content))
+                {
+                    if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        string apiResponse = await response.Content.ReadAsStringAsync();
+                        student = JsonConvert.DeserializeObject<Student>(apiResponse);
+                    }
+                }
+            }
+            return student;
         }
     }
 }

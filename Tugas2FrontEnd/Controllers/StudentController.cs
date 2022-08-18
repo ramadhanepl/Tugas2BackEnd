@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Tugas2FrontEnd.Models;
 using Tugas2FrontEnd.Services;
 
 namespace Tugas2FrontEnd.Controllers
@@ -22,6 +23,28 @@ namespace Tugas2FrontEnd.Controllers
             }
             return Content(strResult);*/
             return View(model);
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(Student student)
+        {
+            try
+            {
+                var result = await _student.Insert(student);
+                //TempData["pesan"] = $"<div class='alert alert-success alert-dismissible fade show'><button type='button' class='btn-close' data-bs-dismiss='alert'></button> Berhasil menambahkan data samurai {result.Name}</div>";
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                ViewData["pesan"] = $"<div class='alert alert-success alert-dismissible fade show'><button type='button' class='btn-close' data-bs-dismiss='alert'></button> Error: {ex.Message}</div>";
+                return View();
+            }
+
         }
     }
 }
