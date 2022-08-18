@@ -12,16 +12,19 @@ namespace Tugas2FrontEnd.Controllers
         {
             _student = student;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(String? name)
         {
-            var model = await _student.GetAll();
-            /*var result = await _student.GetAll();
-            string strResult = string.Empty;
-            foreach (var result in results)
+            ViewData["pesan"] = TempData["pesan"] ?? TempData["pesan"];
+            IEnumerable<Student> model;
+            if (name == null)
             {
-                strResult += result.FirstMidName + "\n";
+                model = await _student.GetAll();
             }
-            return Content(strResult);*/
+            else
+            {
+                model = await _student.GetByName(name);
+            }
+
             return View(model);
         }
 

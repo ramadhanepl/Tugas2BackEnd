@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\ramad\OneDrive\Dokumen\My Project\VisualStudio\Tugas2BackEnd\Tugas2FrontEnd
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/ramad/OneDrive/Dokumen/My Project/VisualStudio/Tugas2BackEnd/Tugas2FrontEnd/Views/Course/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ramad/OneDrive/Dokumen/My Project/VisualStudio/Tugas2BackEnd/Tugas2FrontEnd/Views/Course/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ramad/OneDrive/Dokumen/My Project/VisualStudio/Tugas2BackEnd/Tugas2FrontEnd/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

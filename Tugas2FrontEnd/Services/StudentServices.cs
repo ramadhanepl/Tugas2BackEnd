@@ -18,13 +18,26 @@ namespace Tugas2FrontEnd.Services
                     students = JsonConvert.DeserializeObject<List<Student>>(apiResponse);   
                 }
             }
-
             return students;
         }
 
         public async Task<Student> GetById(int id)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<IEnumerable<Student>> GetByName(string name)
+        {
+            List<Student> students = new List<Student>();
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync($"https://localhost:6001/api/Students/ByName?name={name}"))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    students = JsonConvert.DeserializeObject<List<Student>>(apiResponse);
+                }
+            }
+            return students;
         }
 
         public async Task<Student> Insert(Student obj)
