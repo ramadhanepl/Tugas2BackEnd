@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\nalikatemplate\**" />
+    <Content Remove="wwwroot\nalikatemplate\**" />
+    <EmbeddedResource Remove="wwwroot\nalikatemplate\**" />
+    <None Remove="wwwroot\nalikatemplate\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\bootstraptemplate\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.8" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+</Project>
