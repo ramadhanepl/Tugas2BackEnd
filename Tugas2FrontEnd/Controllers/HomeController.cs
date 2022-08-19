@@ -16,6 +16,12 @@ namespace Tugas2FrontEnd.Controllers
         public IActionResult Index()
         {
             ViewData["pesan"] = TempData["pesan"] ?? TempData["pesan"];
+            /*
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("token")))
+            {
+                HttpContext.Session.SetString($"token", "Bearer  ");
+            }
+            */
             return View();
         }
 

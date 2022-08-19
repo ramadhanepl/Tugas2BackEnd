@@ -42,7 +42,7 @@ namespace Tugas2FrontEnd.Controllers
         public IActionResult Login()
         {
             return View();
-        }
+        } 
 
         [HttpPost("Login")]
         public async Task<IActionResult> Login(User user)
@@ -50,7 +50,13 @@ namespace Tugas2FrontEnd.Controllers
             try
             {
                 var result = await _user.Login(user);
-                TempData["pesan"] = $"<div class='alert alert-primary' role='alert'>Berhasil Login dengan Token : {result.Token}</ div > ";
+                
+                if (string.IsNullOrEmpty(HttpContext.Session.GetString("token")))
+                {
+                    HttpContext.Session.SetString("token", $"Bearer {result.Token}");
+                }
+                
+                //TempData["pesan"] = $"{result.Token}";
                 return RedirectToAction("Index", "Home");
             }
             catch (Exception ex)

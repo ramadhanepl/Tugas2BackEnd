@@ -6,25 +6,34 @@ namespace Tugas2FrontEnd.Services
 {
     public class CourseServices : ICourse
     {
-        public async Task<IEnumerable<Course>> GetAll()
+        public async Task<IEnumerable<Course>> GetAll(string token)
         {
             List<Course> course = new List<Course>();
             using (var httpClient = new HttpClient())
             {
+                httpClient.DefaultRequestHeaders.TryAddWithoutValidation("Authorization", $"{token}");
                 using (var response = await httpClient.GetAsync("https://localhost:6001/api/Courses"))
                 {
-                    string apiResponse = await response.Content.ReadAsStringAsync();
-                    course = JsonConvert.DeserializeObject<List<Course>>(apiResponse);
+                    if(response.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        string apiResponse = await response.Content.ReadAsStringAsync();
+                        course = JsonConvert.DeserializeObject<List<Course>>(apiResponse);
+                    }
+                    else if(response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+                    {
+                        throw new Exception("Gagal retrieve data");
+                    }
                 }
             }
             return course;
         }
  
-        public async Task<IEnumerable<Course>> GetByName(string name)
+        public async Task<IEnumerable<Course>> GetByName(string name, string token)
         { 
             List<Course> courses = new List<Course>();
             using (var httpClient = new HttpClient())
             {
+                httpClient.DefaultRequestHeaders.TryAddWithoutValidation("Authorize", $"{token}");
                 using (var response = await httpClient.GetAsync($"https://localhost:6001/api/Courses/ByName?name={name}"))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();

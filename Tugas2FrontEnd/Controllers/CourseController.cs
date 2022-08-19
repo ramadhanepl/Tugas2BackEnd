@@ -16,14 +16,19 @@ namespace Tugas2FrontEnd.Controllers
         public async Task<IActionResult> Index(String? name)
         {
             ViewData["pesan"] = TempData["pesan"] ?? TempData["pesan"];
+            string myToken = string.Empty;
+            if (!string.IsNullOrEmpty(HttpContext.Session.GetString("token")))
+            {
+                myToken = HttpContext.Session.GetString("token"); 
+            }
             IEnumerable<Course> model;
             if (name == null)
             {
-                model = await _course.GetAll();
+                model = await _course.GetAll(myToken);
             }
             else
             {
-                model = await _course.GetByName(name);
+                model = await _course.GetByName(name, myToken);
             }
 
             return View(model);

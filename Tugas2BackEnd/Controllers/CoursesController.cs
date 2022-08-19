@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Tugas2BackEnd.Data.Interface;
@@ -20,6 +21,7 @@ namespace Tugas2_BackEnd.Controllers
             _mapper = mapper;
         }
 
+        [Authorize]
         [HttpGet]
         public async Task<IEnumerable<CourseReadDTO>> GetAll()
         {
@@ -29,6 +31,7 @@ namespace Tugas2_BackEnd.Controllers
             return courseDTO;
         }
 
+        
         [HttpGet("ByName")]
         public async Task<IEnumerable<CourseReadDTO>> GetByName(string name)
         {
