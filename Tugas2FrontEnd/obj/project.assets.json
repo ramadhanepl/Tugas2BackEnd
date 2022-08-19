@@ -8642,11 +8642,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ramad\\OneDrive\\Dokumen\\My Project\\VisualStudio\\Tugas2BackEnd\\Tugas2FrontEnd\\Tugas2FrontEnd.csproj",
+      "projectUniqueName": "C:\\Users\\ramad\\OneDrive\\Dokumen\\My Project\\Tugas2BackEnd\\Tugas2FrontEnd\\Tugas2FrontEnd.csproj",
       "projectName": "Tugas2FrontEnd",
-      "projectPath": "C:\\Users\\ramad\\OneDrive\\Dokumen\\My Project\\VisualStudio\\Tugas2BackEnd\\Tugas2FrontEnd\\Tugas2FrontEnd.csproj",
+      "projectPath": "C:\\Users\\ramad\\OneDrive\\Dokumen\\My Project\\Tugas2BackEnd\\Tugas2FrontEnd\\Tugas2FrontEnd.csproj",
       "packagesPath": "C:\\Users\\ramad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ramad\\OneDrive\\Dokumen\\My Project\\VisualStudio\\Tugas2BackEnd\\Tugas2FrontEnd\\obj\\",
+      "outputPath": "C:\\Users\\ramad\\OneDrive\\Dokumen\\My Project\\Tugas2BackEnd\\Tugas2FrontEnd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ramad\\AppData\\Roaming\\NuGet\\NuGet.Config",

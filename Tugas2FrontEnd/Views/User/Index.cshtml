@@ -5,3 +5,9 @@
 }
 
 <h1>Hello World</h1>
+<div>
+	@if (ViewData["pesan"] != null)
+	{
+		@Html.Raw(ViewData["pesan"])
+	}
+</div>

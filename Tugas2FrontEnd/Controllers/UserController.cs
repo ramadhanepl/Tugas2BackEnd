@@ -29,12 +29,33 @@ namespace Tugas2FrontEnd.Controllers
             try
             {
                 var result = await _user.Registration(user);
-                //TempData["pesan"] = $"<div class='alert alert-success alert-dismissible fade show'><button type='button' class='btn-close' data-bs-dismiss='alert'></button> Berhasil menambahkan data samurai {result.Name}</div>";
+                //ViewData["pesan"] = $"<div class='alert alert-success alert-dismissible fade show'><button type='button' class='btn-close' data-bs-dismiss='alert'></button> Berhasil menambahkan data samurai {result.Name}</div>";
                 return RedirectToAction("Index");
             }
             catch (Exception ex)
             {
-                //ViewData["pesan"] = $"<div class='alert alert-success alert-dismissible fade show'><button type='button' class='btn-close' data-bs-dismiss='alert'></button> Error: {ex.Message}</div>";
+                ViewData["pesan"] = $"<div class='alert alert-primary' role='alert'>{ex.Message}</ div > ";
+                return View();
+            }
+        }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost("Login")]
+        public async Task<IActionResult> Login(User user)
+        {
+            try
+            {
+                var result = await _user.Login(user);
+                TempData["pesan"] = $"<div class='alert alert-primary' role='alert'>Berhasil Login dengan Token : {result.Token}</ div > ";
+                return RedirectToAction("Index", "Home");
+            }
+            catch (Exception ex)
+            {
+                ViewData["pesan"] = $"<div class='alert alert-success alert-dismissible fade show'><button type='button' class='btn-close' data-bs-dismiss='alert'></button> Error: {ex.Message}</div>";
                 return View();
             }
         }

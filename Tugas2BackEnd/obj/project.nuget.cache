@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LR4EqiDnKjLZcOiwGsiswawMxwi3Oudc8LMYkg6+ngrgqouSF/2XWcrcG6t27nDnc36AIO66y5hAlNNMFwOLrA==",
+  "dgSpecHash": "rDRZJJAPdxg/Y1i9q0wC+knVV8jh97jBr1gk/+xJyXbAP1hONFpINqTb4OKRx+ly4wppRhVOsS0VekkcSG0Xtg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ramad\\OneDrive\\Dokumen\\My Project\\VisualStudio\\Tugas2BackEnd\\Tugas2BackEnd\\Tugas2BackEnd.csproj",
+  "projectFilePath": "C:\\Users\\ramad\\OneDrive\\Dokumen\\My Project\\Tugas2BackEnd\\Tugas2BackEnd\\Tugas2BackEnd.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ramad\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\ramad\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

@@ -10,3 +10,15 @@ C:\Users\ramad\OneDrive\Dokumen\My Project\VisualStudio\Tugas2BackEnd\Tugas2Back
 C:\Users\ramad\OneDrive\Dokumen\My Project\VisualStudio\Tugas2BackEnd\Tugas2BackEnd.Domain\obj\Debug\net6.0\refint\Tugas2BackEnd.Domain.dll
 C:\Users\ramad\OneDrive\Dokumen\My Project\VisualStudio\Tugas2BackEnd\Tugas2BackEnd.Domain\obj\Debug\net6.0\Tugas2BackEnd.Domain.pdb
 C:\Users\ramad\OneDrive\Dokumen\My Project\VisualStudio\Tugas2BackEnd\Tugas2BackEnd.Domain\obj\Debug\net6.0\ref\Tugas2BackEnd.Domain.dll
+C:\Users\ramad\OneDrive\Dokumen\My Project\Tugas2BackEnd\Tugas2BackEnd.Domain\bin\Debug\net6.0\Tugas2BackEnd.Domain.deps.json
+C:\Users\ramad\OneDrive\Dokumen\My Project\Tugas2BackEnd\Tugas2BackEnd.Domain\bin\Debug\net6.0\Tugas2BackEnd.Domain.dll
+C:\Users\ramad\OneDrive\Dokumen\My Project\Tugas2BackEnd\Tugas2BackEnd.Domain\bin\Debug\net6.0\Tugas2BackEnd.Domain.pdb
+C:\Users\ramad\OneDrive\Dokumen\My Project\Tugas2BackEnd\Tugas2BackEnd.Domain\obj\Debug\net6.0\Tugas2BackEnd.Domain.csproj.AssemblyReference.cache
+C:\Users\ramad\OneDrive\Dokumen\My Project\Tugas2BackEnd\Tugas2BackEnd.Domain\obj\Debug\net6.0\Tugas2BackEnd.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ramad\OneDrive\Dokumen\My Project\Tugas2BackEnd\Tugas2BackEnd.Domain\obj\Debug\net6.0\Tugas2BackEnd.Domain.AssemblyInfoInputs.cache
+C:\Users\ramad\OneDrive\Dokumen\My Project\Tugas2BackEnd\Tugas2BackEnd.Domain\obj\Debug\net6.0\Tugas2BackEnd.Domain.AssemblyInfo.cs
+C:\Users\ramad\OneDrive\Dokumen\My Project\Tugas2BackEnd\Tugas2BackEnd.Domain\obj\Debug\net6.0\Tugas2BackEnd.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ramad\OneDrive\Dokumen\My Project\Tugas2BackEnd\Tugas2BackEnd.Domain\obj\Debug\net6.0\Tugas2BackEnd.Domain.dll
+C:\Users\ramad\OneDrive\Dokumen\My Project\Tugas2BackEnd\Tugas2BackEnd.Domain\obj\Debug\net6.0\refint\Tugas2BackEnd.Domain.dll
+C:\Users\ramad\OneDrive\Dokumen\My Project\Tugas2BackEnd\Tugas2BackEnd.Domain\obj\Debug\net6.0\Tugas2BackEnd.Domain.pdb
+C:\Users\ramad\OneDrive\Dokumen\My Project\Tugas2BackEnd\Tugas2BackEnd.Domain\obj\Debug\net6.0\ref\Tugas2BackEnd.Domain.dll

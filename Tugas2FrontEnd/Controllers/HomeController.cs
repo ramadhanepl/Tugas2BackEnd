@@ -15,6 +15,7 @@ namespace Tugas2FrontEnd.Controllers
 
         public IActionResult Index()
         {
+            ViewData["pesan"] = TempData["pesan"] ?? TempData["pesan"];
             return View();
         }
 

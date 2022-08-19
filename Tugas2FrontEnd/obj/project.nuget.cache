@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6MF/hPd+8RVf1SrsLAg+jLN5S9PpNNXyX9nDKD1vHUsMLAt25jzONKOgCc6hlOxtDLasQ6sabISG/qdUW4iZ8Q==",
+  "dgSpecHash": "IOP6GOH7jsS/7bQxNvsHjfvPXUDmCMmMFlraN4O2ULfU8+K04aG97xnG9F7/RdQEefKYnbdM9szy0SZOa8AP0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ramad\\OneDrive\\Dokumen\\My Project\\VisualStudio\\Tugas2BackEnd\\Tugas2FrontEnd\\Tugas2FrontEnd.csproj",
+  "projectFilePath": "C:\\Users\\ramad\\OneDrive\\Dokumen\\My Project\\Tugas2BackEnd\\Tugas2FrontEnd\\Tugas2FrontEnd.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ramad\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\ramad\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
